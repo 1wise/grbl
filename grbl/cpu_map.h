@@ -20,7 +20,7 @@
 
 /* The cpu_map.h files serve as a central pin mapping selection file for different
    processor types or alternative pin layouts. This version of Grbl officially supports
-   only the Arduino Mega328p. 
+   only the Arduino Mega328p.
 This specific branch is ment to use LaserAxe controler with arduino nano v3
    #avrdude -b 57600 -B 16 -P /dev/ttyUSB0 -carduino -p m328p -Uflash:w:grbl.hex
    blower is a must small pc fan does great and conects directly to the board
@@ -70,7 +70,7 @@ This specific branch is ment to use LaserAxe controler with arduino nano v3
   #else
     #define Z_LIMIT_BIT    4 // Uno Digital Pin 11
   #endif
-  #define LIMIT_MASK       ((0<<X_LIMIT_BIT)|(0<<Y_LIMIT_BIT)|(0<<Z_LIMIT_BIT)) // All limit bits
+  #define LIMIT_MASK       ((1<<X_LIMIT_BIT)|(1<<Y_LIMIT_BIT)|(1<<Z_LIMIT_BIT)) // All limit bits
   #define LIMIT_INT        PCIE0  // Pin change interrupt enable pin
   #define LIMIT_INT_vect   PCINT0_vect
   #define LIMIT_PCMSK      PCMSK0 // Pin change interrupt register
@@ -161,5 +161,3 @@ This specific branch is ment to use LaserAxe controler with arduino nano v3
 */
 
 #endif
-
-
