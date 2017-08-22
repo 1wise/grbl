@@ -123,7 +123,7 @@ This specific branch is ment to use LaserAxe controler with arduino nano v3
   #define PROBE_PIN       PINC
   #define PROBE_PORT      PORTC
   #define PROBE_BIT       5  // Uno Analog Pin 5
-  #define PROBE_MASK      (0<<PROBE_BIT)
+  #define PROBE_MASK      (1<<PROBE_BIT)
 
   // Variable spindle configuration below. Do not change unless you know what you are doing.
   // NOTE: Only used when variable spindle is enabled.
