@@ -55,7 +55,7 @@ This specific branch is ment to use LaserAxe controler with arduino nano v3
   // Define stepper driver enable/disable output pin.
   #define STEPPERS_DISABLE_DDR    DDRB
   #define STEPPERS_DISABLE_PORT   PORTB
-  #define STEPPERS_DISABLE_BIT    8  // Uno Digital Pin 8
+  #define STEPPERS_DISABLE_BIT    0  // Uno Digital Pin 8
   #define STEPPERS_DISABLE_MASK   (1<<STEPPERS_DISABLE_BIT)
 
   // Define homing/hard limit switch input pins and limit interrupt vectors.

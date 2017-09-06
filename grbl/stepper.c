@@ -508,7 +508,7 @@ void stepper_init()
 {
   // Configure step and direction interface pins
   STEP_DDR |= STEP_MASK;
-  STEPPERS_DISABLE_DDR |= 1<<STEPPERS_DISABLE_BIT;
+  STEPPERS_DISABLE_DDR |= STEPPERS_DISABLE_MASK;
   DIRECTION_DDR |= DIRECTION_MASK;
 
   // Configure Timer 1: Stepper Driver Interrupt
