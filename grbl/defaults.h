@@ -30,11 +30,11 @@
 #ifdef DEFAULTS_GENERIC
   // laser axe arduino nano v3 Grbl generic default settings. Should work across different machines.
   #define MICROSTEPS_XY 16
-  #define STEP_REVS_XY 50
-  #define MM_PER_REV_XY 2 // TR8X2
+  #define STEP_REVS_XY 200
+  #define MM_PER_REV_XY 8 // TR8X8
   #define MICROSTEPS_Z 16
-  #define STEP_REVS_Z 50
-  #define MM_PER_REV_Z 2 // TRX8X2
+  #define STEP_REVS_Z 200
+  #define MM_PER_REV_Z 8 // TRX8X8
   #define DEFAULT_X_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
   #define DEFAULT_Y_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
   #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
