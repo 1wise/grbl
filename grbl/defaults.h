@@ -30,24 +30,24 @@
 #ifdef DEFAULTS_GENERIC
   // laser axe arduino nano v3 Grbl generic default settings. Should work across different machines.
   #define MICROSTEPS_XY 16
-  #define STEP_REVS_XY 200
-  #define MM_PER_REV_XY 40 // 2mm belt pitch, 20 pulley teeth
-  #define MICROSTEPS_Z 2
-  #define STEP_REVS_Z 200
-  #define MM_PER_REV_Z 1.5 // ACME barilla metrica roscada de 8 mm
+  #define STEP_REVS_XY 50
+  #define MM_PER_REV_XY 2 // TR8X2
+  #define MICROSTEPS_Z 16
+  #define STEP_REVS_Z 50
+  #define MM_PER_REV_Z 2 // TRX8X2
   #define DEFAULT_X_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
   #define DEFAULT_Y_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
   #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
   #define DEFAULT_X_MAX_RATE 1500.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 1500.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 200.0 // mm/min
+  #define DEFAULT_Z_MAX_RATE 1500.0 // mm/min
   #define DEFAULT_X_ACCELERATION (150.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (150.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (10.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_X_MAX_TRAVEL 300.0 // mm
-  #define DEFAULT_Y_MAX_TRAVEL 400.0 // mm
-  #define DEFAULT_Z_MAX_TRAVEL 100.0 // mm
-  #define DEFAULT_SPINDLE_RPM_MAX 255.0 // rpm
+  #define DEFAULT_Z_ACCELERATION (150.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
+  #define DEFAULT_X_MAX_TRAVEL 235.0 // mm
+  #define DEFAULT_Y_MAX_TRAVEL 155.0 // mm
+  #define DEFAULT_Z_MAX_TRAVEL 55.0 // mm
+  #define DEFAULT_SPINDLE_RPM_MAX 7000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 1.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
   #define DEFAULT_STEPPING_INVERT_MASK 0
@@ -65,8 +65,8 @@
   #define DEFAULT_LASER_MODE 0 // false
   #define DEFAULT_HOMING_ENABLE 0  // false
   #define DEFAULT_HOMING_DIR_MASK 0 // move positive dir
-  #define DEFAULT_HOMING_FEED_RATE 900.0 // mm/min
-  #define DEFAULT_HOMING_SEEK_RATE 900.0 // mm/min
+  #define DEFAULT_HOMING_FEED_RATE 600.0 // mm/min
+  #define DEFAULT_HOMING_SEEK_RATE 600.0 // mm/min
   #define DEFAULT_HOMING_DEBOUNCE_DELAY 25 // msec (0-65k)
   #define DEFAULT_HOMING_PULLOFF 1.0 // mm
 #endif
